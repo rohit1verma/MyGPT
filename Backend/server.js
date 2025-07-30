@@ -8,8 +8,15 @@ import chatRoutes from "./routes/chat.js";
 const app = express();
 const PORT = 8080;
 
+const FRONTEND_URL = "https://rohitgpt.onrender.com";
+
 app.use(express.json());
-app.use(cors());
+app.use(
+  cors({
+    origin: FRONTEND_URL,
+    credentials: true,
+  })
+);
 
 app.use("/api",chatRoutes);
 
