@@ -119,3 +119,30 @@ input:focus{
     background-color: rgba(180,180,180,0.1) !important;
     border-radius: 6px !important;
 }
+
+/* ChatWindow.css */
+.chatWindow {
+  margin-left: 320px; /* Adjust based on sidebar width */
+}
+
+@media (max-width: 768px) {
+  .chatWindow {
+    margin-left: 0; /* Remove margin when sidebar is full width */
+  }
+}
+
+
+
+@media (max-width: 480px) {
+  .chatInput input {
+    font-size: 0.9rem; /* Smaller font size on very small screens */
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .loader-container {
+    bottom: 60px; /* Adjust loader position on smaller screens */
+  }
+}

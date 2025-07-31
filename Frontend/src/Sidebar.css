@@ -107,3 +107,40 @@ button:hover {
   background-color: rgba(180,180,180,0.05);
   border-radius: 10px;
 }
+
+/* Sidebar.css */
+.sidebar {
+  width: 320px;
+  height: 100vh; /* Consider using min-height: 100vh; */
+  /* Other styles */
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%; /* Full width on smaller screens */
+    height: auto; /* Adjust height as needed */
+    position: static; /* Remove fixed positioning if necessary */
+  }
+}
+
+button {
+  flex-direction: row; /* Stack items vertically on smaller screens */
+  /* Other button styles */
+}
+
+@media (max-width: 480px) {
+  button span {
+    font-size: 16px; /* Smaller font size on very small screens */
+  }
+}
+
+.history {
+  max-height: calc(100vh - 200px); /* Adjust based on header/footer height */
+  overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+  .history {
+    max-height: 300px; /* Adjust as needed for smaller screens */
+  }
+}

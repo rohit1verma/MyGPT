@@ -44,3 +44,23 @@
 pre{
   white-space: pre-wrap;
 }
+
+/* Chat.css */
+.userMessage {
+  max-width: 80%; /* Prevent long messages from overflowing */
+}
+
+@media (max-width: 480px) {
+  .userMessage {
+    font-size: 0.85rem; /* Smaller font size on very small screens */
+    max-width: 90%;
+  }
+}
+
+
+
+@media (max-width: 480px) {
+  .gptDiv {
+    font-size: 0.85rem; /* Smaller font size on very small screens */
+  }
+}
